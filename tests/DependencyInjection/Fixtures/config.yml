@@ -1,0 +1,3 @@
+domain_parser:
+    cache_dir: '%kernel.cache_dir%/domain_parser'
+    http_adapter: test

@@ -1,0 +1,53 @@
+{
+    "authors": [
+        {
+            "email": "minottoemanuele@gmail.com",
+            "name": "Emanuele Minotto"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EmanueleMinotto\\DomainParserBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EmanueleMinotto\\DomainParserBundle\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "description": "Symfony Bundle for jeremykendall/php-domain-parser",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "keywords": [
+        "domain",
+        "parser",
+        "bundle"
+    ],
+    "license": "MIT",
+    "name": "emanueleminotto/domain-parser-bundle",
+    "require": {
+        "php": "^5.5|^7.0",
+        "jeremykendall/php-domain-parser": "^3.0",
+        "symfony/console": "^2.8|^3.0",
+        "symfony/framework-bundle": "^2.8|^3.0"
+    },
+    "require-dev": {
+        "matthiasnoback/symfony-dependency-injection-test": "^0.7.6",
+        "mikey179/vfsStream": "^1.6",
+        "phpunit/phpunit": "^5.2",
+        "scrutinizer/ocular": "^1.3",
+        "squizlabs/php_codesniffer": "^2.5",
+        "symfony/twig-bridge": "^2.8|^3.0",
+        "symfony/validator": "^2.8|^3.0"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "type": "symfony-bundle"
+}

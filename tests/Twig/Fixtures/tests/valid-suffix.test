@@ -1,0 +1,13 @@
+--TEST--
+"valid suffix" test
+--TEMPLATE--
+{{ correct is valid suffix ? 'ok' : 'ko' }}
+{{ wrong is valid suffix ? 'ok' : 'ko' }}
+--DATA--
+return [
+    'correct' => 'www.example.com',
+    'wrong' => 'www.example.sjhfksj',
+];
+--EXPECT--
+ok
+ko

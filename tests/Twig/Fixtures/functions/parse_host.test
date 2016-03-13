@@ -1,0 +1,16 @@
+--TEST--
+"parse_host" test
+--TEMPLATE--
+host: {{ parse_host(data).host }}
+subdomain: {{ parse_host(data).subdomain }}
+registerableDomain: {{ parse_host(data).registerableDomain }}
+publicSuffix: {{ parse_host(data).publicSuffix }}
+--DATA--
+return [
+    'data' => 'www.pref.okinawa.jp',
+];
+--EXPECT--
+host: www.pref.okinawa.jp
+subdomain: www
+registerableDomain: pref.okinawa.jp
+publicSuffix: okinawa.jp

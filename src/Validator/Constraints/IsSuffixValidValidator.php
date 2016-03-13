@@ -1,0 +1,49 @@
+<?php
+
+namespace EmanueleMinotto\DomainParserBundle\Validator\Constraints;
+
+use Pdp\Parser;
+use Symfony\Component\Validator\Constraint;
+use Symfony\Component\Validator\ConstraintValidator;
+
+/**
+ * Constraint to check if the suffix is valid or not.
+ *
+ * @author Emanuele Minotto <minottoemanuele@gmail.com>
+ */
+class IsSuffixValidValidator extends ConstraintValidator
+{
+    /**
+     * Pdp Parser.
+     *
+     * @var Parser
+     */
+    private $parser;
+
+    /**
+     * Contructor used for the parser dependency.
+     *
+     * @param Parser $parser
+     */
+    public function __construct(Parser $parser)
+    {
+        $this->parser = $parser;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function validate($value, Constraint $constraint)
+    {
+        if (!$value || $this->parser->isSuffixValid($value)) {
+            return;
+        }
+
+        $suffix = $this->parser->getPublicSuffix($value) ?: $value;
+
+        $this->context
+            ->buildViolation($constraint->message)
+            ->setParameter('%suffix%', $suffix)
+            ->addViolation();
+    }
+}

@@ -1,0 +1,30 @@
+--TEST--
+"parse_url" test
+--TEMPLATE--
+scheme: {{ parse_url(data).scheme }}
+user: {{ parse_url(data).user }}
+pass: {{ parse_url(data).pass }}
+host: {{ parse_url(data).host }}
+subdomain: {{ parse_url(data).subdomain }}
+registerableDomain: {{ parse_url(data).registerableDomain }}
+publicSuffix: {{ parse_url(data).publicSuffix }}
+port: {{ parse_url(data).port }}
+path: {{ parse_url(data).path }}
+query: {{ parse_url(data).query }}
+fragment: {{ parse_url(data).fragment }}
+--DATA--
+return [
+    'data' => 'http://user:pass@www.pref.okinawa.jp:8080/path/to/page.html?query=string#fragment',
+];
+--EXPECT--
+scheme: http
+user: user
+pass: pass
+host: www.pref.okinawa.jp
+subdomain: www
+registerableDomain: pref.okinawa.jp
+publicSuffix: okinawa.jp
+port: 8080
+path: /path/to/page.html
+query: query=string
+fragment: fragment

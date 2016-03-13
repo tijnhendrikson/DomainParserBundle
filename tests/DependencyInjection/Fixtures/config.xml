@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:domain_parser="domain_parser" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <domain_parser:config>
+        <domain_parser:cache-dir>%kernel.cache_dir%/domain_parser</domain_parser:cache-dir>
+        <domain_parser:http-adapter>test</domain_parser:http-adapter>
+    </domain_parser:config>
+</container>
