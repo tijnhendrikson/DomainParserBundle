@@ -43,7 +43,7 @@ Readings:
 .. _jeremykendall/php-domain-parser: https://github.com/jeremykendall/php-domain-parser
 .. _Composer: https://getcomposer.org/
 .. _installation chapter: https://getcomposer.org/doc/00-intro.md
-.. _Configuration Reference: https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/Resources/doc/configuration-reference.rst
+.. _Configuration Reference: https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/src/Resources/doc/configuration-reference.rst
 
 License
 -------
