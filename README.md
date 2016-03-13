@@ -5,7 +5,6 @@
 [![Build Status][ico-travis]][link-travis]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
 
 Symfony Bundle for [jeremykendall/php-domain-parser](https://github.com/jeremykendall/php-domain-parser).
 
@@ -81,12 +80,10 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-travis]: https://img.shields.io/travis/EmanueleMinotto/DomainParserBundle/master.svg?style=flat-square
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/EmanueleMinotto/DomainParserBundle.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/EmanueleMinotto/DomainParserBundle.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/emanueleminotto/domain-parser-bundle.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/emanueleminotto/domain-parser-bundle
 [link-travis]: https://travis-ci.org/EmanueleMinotto/DomainParserBundle
 [link-scrutinizer]: https://scrutinizer-ci.com/g/EmanueleMinotto/DomainParserBundle/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/EmanueleMinotto/DomainParserBundle
-[link-downloads]: https://packagist.org/packages/emanueleminotto/domain-parser-bundle
 [link-author]: https://github.com/EmanueleMinotto
 [link-contributors]: ../../contributors
