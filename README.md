@@ -10,8 +10,7 @@ Symfony Bundle for [jeremykendall/php-domain-parser](https://github.com/jeremyke
 
 ## Documentation
 
-The source of the documentation is stored in the `Resources/doc/` folder
-in this bundle, and available on symfony.com:
+The source of the documentation is stored in the `Resources/doc/` folder in this bundle:
 
 [Documentation](src/Resources/doc/index.rst)
 
