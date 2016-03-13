@@ -8,49 +8,12 @@
 
 Symfony Bundle for [jeremykendall/php-domain-parser](https://github.com/jeremykendall/php-domain-parser).
 
-## Step 1: Download the Bundle
+## Documentation
 
-Open a command console, enter your project directory and execute the
-following command to download the latest stable version of this bundle:
+The source of the documentation is stored in the `Resources/doc/` folder
+in this bundle, and available on symfony.com:
 
-```bash
-$ composer require emanueleminotto/domain-parser-bundle
-```
-
-This command requires you to have Composer installed globally, as explained
-in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
-of the Composer documentation.
-
-## Step 2: Enable the Bundle
-
-Then, enable the bundle by adding it to the list of registered bundles
-in the `app/AppKernel.php` file of your project:
-
-```php
-<?php
-// app/AppKernel.php
-
-// ...
-class AppKernel extends Kernel
-{
-    public function registerBundles()
-    {
-        $bundles = array(
-            // ...
-
-            new EmanueleMinotto\DomainParserBundle\DomainParserBundle(),
-        );
-
-        // ...
-    }
-
-    // ...
-}
-```
-
-## Readings:
-
- * [Configuration Reference](https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/src/Resources/doc/configuration-reference.rst)
+[Documentation](src/Resources/doc/index.rst)
 
 ## Change log
 
