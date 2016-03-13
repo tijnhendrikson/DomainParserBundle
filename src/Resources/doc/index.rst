@@ -36,9 +36,14 @@ Then, enable the bundle by adding the following line in the ``app/AppKernel.php`
         }
     }
 
+Readings:
+
+-  `Configuration Reference`_
+
 .. _jeremykendall/php-domain-parser: https://github.com/jeremykendall/php-domain-parser
 .. _Composer: https://getcomposer.org/
 .. _installation chapter: https://getcomposer.org/doc/00-intro.md
+.. _Configuration Reference: https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/Resources/doc/configuration-reference.rst
 
 License
 -------

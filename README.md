@@ -48,6 +48,10 @@ class AppKernel extends Kernel
 }
 ```
 
+## Readings:
+
+ * [Configuration Reference](https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/Resources/doc/configuration-reference.rst)
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
