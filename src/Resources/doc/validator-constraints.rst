@@ -9,7 +9,7 @@ Basic Usage
 
 Annotations:
 
-.. code-block:: php-annotations
+.. code-block:: php
 
     // src/AppBundle/Entity/Link.php
     namespace AppBundle\Entity;
