@@ -78,7 +78,7 @@ class UpdateCommandTest extends PHPUnit_Framework_TestCase
         ]);
 
         $this->assertSame(
-            "Updating public suffix list...done\n",
+            "Updating public suffix list... done\n",
             $this->commandTester->getDisplay()
         );
     }
