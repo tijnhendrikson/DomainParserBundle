@@ -31,7 +31,7 @@ class UpdateCommand extends ContainerAwareCommand
         $container = $this->getContainer();
         $manager = $container->get('pdp.public_suffix_list_manager');
 
-        $output->write('Updating public suffix list...');
+        $output->write('Updating public suffix list... ');
 
         $manager->refreshPublicSuffixList();
 

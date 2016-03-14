@@ -45,7 +45,15 @@ in the ``app/AppKernel.php`` file of your project:
 Readings
 --------
 
--  `Configuration Reference`_
+- `Cache Warmer`_
+- `Configuration Reference`_
+- `Console Commands`_
+- `Twig Extension`_
+- `Validator Constraints`_
 
 .. _`installation chapter`: https://getcomposer.org/doc/00-intro.md
-.. _Configuration Reference: https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/src/Resources/doc/configuration-reference.rst
+.. _`Cache Warmer`: https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/src/Resources/doc/cache-warmer.rst
+.. _`Configuration Reference`: https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/src/Resources/doc/configuration-reference.rst
+.. _`Console Commands`: https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/src/Resources/doc/console-commands.rst
+.. _`Twig Extension`: https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/src/Resources/doc/twig-extension.rst
+.. _`Validator Constraints`: https://github.com/EmanueleMinotto/DomainParserBundle/tree/master/src/Resources/doc/validator-constraints.rst
