@@ -4,7 +4,11 @@ namespace EmanueleMinotto\DomainParserBundle\Validator\Constraints;
 
 use Pdp\Parser;
 use Pdp\PublicSuffixListManager;
+use Symfony\Component\Translation\TranslatorInterface;
+use Symfony\Component\Validator\Context\ExecutionContext;
 use Symfony\Component\Validator\Tests\Constraints\AbstractConstraintValidatorTest;
+use Symfony\Component\Validator\Validator\ContextualValidatorInterface;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 /**
  * @author Emanuele Minotto <minottoemanuele@gmail.com>
@@ -14,6 +18,26 @@ use Symfony\Component\Validator\Tests\Constraints\AbstractConstraintValidatorTes
  */
 class IsSuffixValidValidatorTest extends AbstractConstraintValidatorTest
 {
+    protected function createContext()
+    {
+        $translator = $this->createMock(TranslatorInterface::class);
+        $validator = $this->createMock(ValidatorInterface::class);
+        $contextualValidator = $this->createMock(ContextualValidatorInterface::class);
+
+        $context = new ExecutionContext($validator, $this->root, $translator);
+        $context->setGroup($this->group);
+        $context->setNode($this->value, $this->object, $this->metadata, $this->propertyPath);
+        $context->setConstraint($this->constraint);
+
+        $validator
+            ->expects($this->any())
+            ->method('inContext')
+            ->with($context)
+            ->will($this->returnValue($contextualValidator));
+
+        return $context;
+    }
+
     /**
      * Gets tested validator.
      *
@@ -68,6 +92,7 @@ class IsSuffixValidValidatorTest extends AbstractConstraintValidatorTest
         return [
             ['tmp', 'tmp'],
             ['example.tmp', 'tmp'],
+            ['http://example.tmp/', 'tmp'],
         ];
     }
 }

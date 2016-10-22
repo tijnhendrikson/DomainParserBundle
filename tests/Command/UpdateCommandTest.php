@@ -48,7 +48,7 @@ class UpdateCommandTest extends PHPUnit_Framework_TestCase
      */
     private function getContainer()
     {
-        $container = $this->getMock(ContainerInterface::class);
+        $container = $this->createMock(ContainerInterface::class);
 
         $container
             ->method('get')

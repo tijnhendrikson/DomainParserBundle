@@ -1,8 +1,8 @@
 Validator Constraints
 =====================
 
-A validator constraint is provided, ``IsSuffixValid`` checks if a domain has a
-valid suffix (if the value isn't null or blank).
+A validator constraint is provided, ``IsSuffixValid`` checks if a domain or an
+URL has a valid suffix (if the value isn't null or blank).
 
 Basic Usage
 -----------

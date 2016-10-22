@@ -43,7 +43,7 @@ class CachedDomainsListWarmerTest extends PHPUnit_Framework_TestCase
     public function testWarmUpWithCustomHttpAdapter()
     {
         $fileSystem = vfsStream::setup();
-        $httpAdapter = $this->getMock(HttpAdapterInterface::class);
+        $httpAdapter = $this->createMock(HttpAdapterInterface::class);
 
         $warmer = new CachedDomainsListWarmer($httpAdapter);
         $warmer->warmUp($fileSystem->url());

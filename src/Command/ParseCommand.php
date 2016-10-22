@@ -69,7 +69,7 @@ class ParseCommand extends ContainerAwareCommand
     /**
      * Argument parsing.
      *
-     * @param string $argument Url or domain.
+     * @param string $argument Url or domain
      * @param bool   $hostOnly
      *
      * @return \Pdp\Uri\Url|\Pdp\Uri\Url\Host

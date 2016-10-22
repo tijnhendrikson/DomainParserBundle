@@ -35,6 +35,11 @@ class IsSuffixValidValidator extends ConstraintValidator
      */
     public function validate($value, Constraint $constraint)
     {
+        // allow check for URLs too
+        if ($host = parse_url($value, PHP_URL_HOST)) {
+            $value = $host;
+        }
+
         if (!$value || $this->parser->isSuffixValid($value)) {
             return;
         }
